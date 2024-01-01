@@ -21,11 +21,24 @@
 .selector_typo {
   border: none;
   appearance: none;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: 130px;
 }
 
 .selector_typo:active,
 .selector_typo:focus {
   border: none;
   outline: none;
+}
+
+.selector_typo > option:nth-child(1) {
+  font-family: "Lora", serif;
+}
+
+.selector_typo > option:nth-child(2) {
+  font-family: "Inter", sans-serif;
+}
+
+.selector_typo > option:nth-child(3) {
+  font-family: "Inconsolata", monospace;
 }
