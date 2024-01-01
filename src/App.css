@@ -1,0 +1,9 @@
+body {
+  margin: 2.5rem 20rem;
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    margin: 2.5rem 2.5rem;
+  }
+}

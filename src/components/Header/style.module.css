@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,700&display=swap");
+
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Inter', sans-serif;
+font-family: 'Lora', serif; */
+
+body {
+  font-family: "Lora", serif;
+}
+
+.nav_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.selects span {
+  color: grey;
+}

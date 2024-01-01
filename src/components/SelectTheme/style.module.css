@@ -1,0 +1,49 @@
+.switch {
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  margin-top: 2.5px;
+  overflow: hidden;
+  position: relative;
+  width: 40px;
+}
+
+.switch input {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 0;
+  height: 0;
+}
+
+.switch input + span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #757575;
+  border-radius: 20px;
+}
+
+.switch input:checked + span {
+  background: #a745ef;
+}
+
+.switch input + span:before {
+  content: "";
+  border-radius: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+
+.switch input:checked + span::before {
+  left: 22px;
+}
