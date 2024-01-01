@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  background: url("../../assets/img/icon-arrow-down.svg") center no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  height: 10px;
+  width: 10px;
+  transition: all 0.5s;
+  transform: translateY(-50%);
+}
+
+.selector_typo:focus .container::before {
+  transform: rotate(180deg);
+}
+
+.selector_typo {
+  border: none;
+  appearance: none;
+  padding: 0.5rem;
+}
+
+.selector_typo:active,
+.selector_typo:focus {
+  border: none;
+  outline: none;
+}

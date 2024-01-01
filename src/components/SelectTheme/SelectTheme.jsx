@@ -3,12 +3,13 @@ import s from "./style.module.css";
 
 export function SelectTheme() {
   const [isChecked, setIsChecked] = useState(false);
-  console.log("Dans le selectheme ", isChecked);
 
   function handleTheme() {
     if (isChecked) {
+      document.body.classList.remove("body_dark");
       return setIsChecked(false);
     } else {
+      document.body.classList.add("body_dark");
       return setIsChecked(true);
     }
   }

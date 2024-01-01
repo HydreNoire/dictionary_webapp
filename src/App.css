@@ -1,5 +1,17 @@
 body {
   margin: 2.5rem 20rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.body_dark {
+  background: #050505;
+  color: white;
+}
+
+.body_dark select,
+.body_dark select option {
+  background: #050505;
+  color: white;
 }
 
 @media screen and (max-width: 960px) {

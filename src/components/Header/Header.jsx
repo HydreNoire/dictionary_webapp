@@ -1,7 +1,7 @@
 import s from "./style.module.css";
 import logo from "../../assets/img/logo.svg";
 import { SelectTypo } from "../SelectTypo/SelectTypo";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { SelectTheme } from "../SelectTheme/SelectTheme";
 
 export function Header() {
@@ -12,16 +12,16 @@ export function Header() {
 
     switch (e.target.value) {
       case "inconsolata":
-        document.body.style.fontFamily = "Inconsolata";
+        document.body.style.fontFamily = "'Inconsolata', monospace";
         break;
       case "inter":
-        document.body.style.fontFamily = "Inter";
+        document.body.style.fontFamily = "'Inter', sans-serif";
         break;
       case "lora":
-        document.body.style.fontFamily = "Lora";
+        document.body.style.fontFamily = "'Lora', serif";
         break;
       default:
-        document.body.style.fontFamily = "Lora";
+        document.body.style.fontFamily = "'Inter', sans-serif";
         break;
     }
   }
