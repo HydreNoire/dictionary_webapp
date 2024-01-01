@@ -47,3 +47,7 @@
 .switch input:checked + span::before {
   left: 22px;
 }
+
+svg {
+  color: #a745ef;
+}

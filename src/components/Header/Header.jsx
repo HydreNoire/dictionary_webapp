@@ -1,7 +1,7 @@
 import s from "./style.module.css";
 import logo from "../../assets/img/logo.svg";
 import { SelectTypo } from "../SelectTypo/SelectTypo";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SelectTheme } from "../SelectTheme/SelectTheme";
 
 export function Header() {
