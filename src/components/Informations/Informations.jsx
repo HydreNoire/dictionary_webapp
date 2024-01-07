@@ -3,8 +3,17 @@ import viewIcon from "../../assets/img/icon-new-window.svg";
 import s from "./style.module.css";
 
 export function Informations({ data }) {
-  var audio = new Audio(data.phonetics[data.phonetics.length - 1].audio);
-  // console.log(audio.src);
+  let wordAudio = "";
+  if (data.phonetics.length > 0) {
+    console.log("***", " il y a un audio");
+    wordAudio = data.phonetics[data.phonetics.length - 1].audio;
+  } else {
+    console.log("***", " Il n'y a pas d'audio");
+    wordAudio =
+      "https://api.dictionaryapi.dev/media/pronunciations/en/none-1-us.mp3";
+  }
+  let audio = new Audio(wordAudio);
+  console.log(audio.src);
 
   return (
     <div>
@@ -16,7 +25,9 @@ export function Informations({ data }) {
         <button
           className={s.btn_audio}
           onClick={() =>
-            audio.src.includes("dictionaryapi") ? audio.play() : ""
+            audio.src.includes("dictionaryapi")
+              ? audio.play()
+              : "https://api.dictionaryapi.dev/media/pronunciations/en/none-1-us.mp3"
           }
         >
           <img src={iconPlay} alt="logo play" />

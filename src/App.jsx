@@ -24,7 +24,9 @@ function App() {
 
   async function searchWord(word) {
     try {
-      const searchResponse = await dictionnaryAPI.fetchWordToRetrieve(word);
+      const searchResponse = await dictionnaryAPI.fetchWordToRetrieve(
+        word.replace(/\s/g, "")
+      );
       if (searchResponse.length > 0) {
         setWord(searchResponse[0]);
       } else {
