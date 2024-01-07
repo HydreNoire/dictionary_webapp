@@ -1,5 +1,7 @@
 export function Informations({ data }) {
-  console.log(data);
+  // console.log(data);
+  const meanings = data.meanings;
+  console.log(meanings);
   return (
     <div>
       <div>

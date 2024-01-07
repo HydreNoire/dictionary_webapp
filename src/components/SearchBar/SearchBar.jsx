@@ -1,9 +1,15 @@
 import s from "./style.module.css";
 
-export function SearchBar() {
+export function SearchBar({ onSubmit }) {
+  function submit(e) {
+    if (e.key == "Enter" && e.target.value.trim() != "") {
+      onSubmit(e.target.value);
+    }
+  }
+
   return (
     <div className={s.container}>
-      <input type="text" placeholder="keyboard" />
+      <input type="text" placeholder="keyboard" onKeyUp={submit} />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="18"
