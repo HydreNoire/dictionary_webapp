@@ -67,7 +67,6 @@ hr {
   color: #808080;
   font-size: 0.8rem;
   margin-left: 3rem;
-  margin-bottom: 3rem;
 }
 
 .word_synonyms {
@@ -97,4 +96,8 @@ a {
 .word_source img {
   margin-left: 0.3rem;
   vertical-align: top;
+}
+
+.end {
+  margin-top: 3rem;
 }

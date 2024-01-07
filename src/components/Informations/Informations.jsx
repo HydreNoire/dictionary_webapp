@@ -61,7 +61,7 @@ export function Informations({ data }) {
         );
       })}
 
-      <hr />
+      <hr className={s.end} />
 
       <div className={s.word_source}>
         <p>
