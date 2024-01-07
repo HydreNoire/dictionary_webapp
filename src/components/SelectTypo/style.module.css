@@ -19,6 +19,7 @@
 }
 
 .selector_typo {
+  background: none;
   border: none;
   appearance: none;
   padding: 0.5rem 1rem;
